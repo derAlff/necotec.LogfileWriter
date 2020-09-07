@@ -20,6 +20,12 @@ LogfileWriter::LogfileWriter()
 
 }
 
+LogfileWriter::LogfileWriter(std::string path, std::string filename)
+{
+    SetLogfilePath(path);
+    SetLogfileName(filename);
+}
+
 LogfileWriter::~LogfileWriter()
 {
 
