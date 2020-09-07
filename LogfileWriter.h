@@ -23,10 +23,11 @@ protected:
 
 private:
     std::string LogfilePath = "";
-    std::string LogfileName = "";
+    std::string LogfileName = "nctLogfile.txt";
 
 public:
     LogfileWriter();
+    LogfileWriter(std::string path, std::string filename);
     ~LogfileWriter();
     void Test();
     bool SetLogfilePath(std::string path);
